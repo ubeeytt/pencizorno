@@ -1,0 +1,104 @@
+/* Temel sıfırlama ve arka plan stili */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #4facfe 0%, #00f2fe 100%); /* Hafif mavi bir gradient */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Oturum açma kutusu (Kapsayıcı) stili */
+.login-container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); /* Hafif gölge */
+    width: 350px;
+    text-align: center;
+}
+
+/* Başlık stili */
+.login-container h2 {
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* Giriş grubu stili */
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Etiket (Label) stili */
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+/* Giriş kutuları (Input) stili */
+.input-group input[type="text"],
+.input-group input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box; /* Padding'in genişliğe dahil olmasını sağlar */
+    transition: border-color 0.3s;
+}
+
+/* Giriş kutularına odaklanıldığında (focus) stil */
+.input-group input:focus {
+    border-color: #4facfe;
+    outline: none; /* Tarayıcının varsayılan odak stilini kaldırır */
+}
+
+/* Giriş Yap düğmesi stili */
+.login-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4facfe;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+/* Düğme üzerine gelindiğinde (hover) stil */
+.login-button:hover {
+    background-color: #00f2fe;
+}
+
+/* Şifremi Unuttum bağlantı stili */
+.forgot-password {
+    margin-top: 20px;
+}
+
+.forgot-password a {
+    color: #4facfe;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.forgot-password a:hover {
+    color: #00f2fe;
+    text-decoration: underline;
+}
+.footer {
+    position: fixed; /* Sayfanın en altında sabit kalmasını sağlar */
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    color: rgba(255, 255, 255, 0.8); /* Açık renkli, yarı saydam metin */
+    font-size: 14px;
+    background: rgba(0, 0, 0, 0.1); /* Hafif şeffaf bir arka plan */
+    z-index: -1; /* Diğer öğelerin arkasında kalmasını sağlar */
+}
